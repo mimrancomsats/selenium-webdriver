@@ -8,8 +8,8 @@ pipeline {
             steps {
                 script {
                     // Build the Docker image
-                    sh '''docker build -t $IMAGE_NAME .
-                          docker images'''                    
+                    sh docker build -t $IMAGE_NAME .
+                          //docker images                    
                 }
             }
         }
